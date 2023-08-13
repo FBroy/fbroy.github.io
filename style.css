@@ -5,9 +5,9 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
+/* body {
     overflow-y: hidden;
-}
+} */
 
 section {
     display: flex;
@@ -18,12 +18,15 @@ section {
     background: url("/images/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .container {
-    height: 100vh;
+    box-sizing: border-box;
+    min-height: 100vh;
     width: 45vw;
     text-align: center;
+    padding: 15px 0;
 
     backdrop-filter: blur(5px) brightness(40%);
     display: flex;
@@ -56,4 +59,42 @@ section {
 .icons button:hover {
     background: rgba(255, 255, 255, 0.1);
     transition: 0.5s;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container {
+        width: 65vw;
+    }
+
+    .content {
+        margin: 7.5%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 1.1em;
+        padding: 7.5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90vw;
+    }
+
+    .content {
+        margin: 5%;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .description {
+        font-size: 1em;
+        padding: 5%;
+    }
 }
