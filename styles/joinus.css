@@ -1,0 +1,48 @@
+/* Main section */
+.main-join-us {
+  margin-bottom: 100px;
+}
+
+.scroll-div {
+  overflow-x: auto;
+}
+
+/* Memberships table */
+.membership-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.membership-table thead tr {
+  background-color: #193479;
+  color: white;
+  text-align: left;
+}
+
+.membership-table th,
+.membership-table td {
+  padding: 12px 15px;
+}
+
+.membership-table ul {
+  padding-left: 15px;
+}
+
+.membership-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.membership-table tbody td {
+  border-left: 1px solid #dddddd;
+}
+
+.membership-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.membership-table tbody tr:last-of-type {
+  border-bottom: 2px solid #193479;
+}

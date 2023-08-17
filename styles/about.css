@@ -1,0 +1,76 @@
+/* Hero image */
+.hero-image {
+  display: flex;
+  align-items: flex-end;
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* About the DD section */
+.delftscheDodgers h2 {
+  margin: 20px 0;
+}
+
+/* Boards section */
+.board .board-cards-container {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board .board-card {
+  background-color: #193479;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(25, 52, 121, 0.25);
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.board .profile-picture {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border-radius: 20px;
+  border: 3px solid white;
+  margin: 10px auto 30px auto;
+}
+
+.board .president-img {
+  background-image: url(/images/board-president.png);
+  background-position: center;
+}
+
+.board .vice-president-img {
+  background-image: url(/images/board-vice-president.png);
+  background-position: center;
+}
+
+.board .treasurer-img {
+  background-image: url(/images/board-treasurer.png);
+  background-position: center;
+}
+
+.board .secretary-img {
+  background-image: url(/images/board-secretary.png);
+  background-position: center;
+}
+
+.board .board-card h3 {
+  margin-bottom: 20px;
+}
+
+.board .board-card p {
+  line-height: 26px;
+}

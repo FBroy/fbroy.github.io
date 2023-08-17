@@ -1,0 +1,41 @@
+/* Main section */
+.scroll-div {
+  overflow-x: auto;
+}
+
+/* Training schedule table */
+.training-schedule-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.training-schedule-table thead tr {
+  background-color: #193479;
+  color: white;
+  text-align: left;
+}
+
+.training-schedule-table th,
+.training-schedule-table td {
+  padding: 12px 15px;
+}
+
+.training-schedule-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.training-schedule-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.training-schedule-table tbody tr:last-of-type {
+  border-bottom: 2px solid #193479;
+}
+
+.note {
+  line-height: normal;
+  font-size: smaller;
+  margin: 5px 0 30px 0;
+}

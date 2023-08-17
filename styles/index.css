@@ -1,0 +1,112 @@
+/* Style for the hero image */
+.hero-image {
+  display: flex;
+  align-items: flex-end;
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Style for main section */
+.main-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-index p {
+  text-align: center;
+}
+
+/* Intro section */
+.intro {
+  width: 60%;
+  text-align: center;
+}
+
+.intro p {
+  margin: 25px 0;
+}
+
+/* Trainings/Events/Competitions section */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cards-section .card {
+  width: 25%;
+  text-align: center;
+}
+
+.cards-section .card .main-icon {
+  width: 100px;
+}
+
+.cards-section .card h2 {
+  margin: 10px 0;
+}
+
+/* Button style */
+.button-style {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  width: 65%;
+  background-color: #193479;
+  color: white;
+  border: 1px solid #193479;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(25, 52, 121, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #1F47AF;
+}
+
+/* Join us section */
+.join-us-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.join-us-section a {
+  font-size: 1.25rem;
+  padding: 20px 40px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 992px) {
+  /* Intro section */
+  .intro {
+    width: 100%;
+  }
+
+  /* Training/Events/Competitions section */
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-section .card {
+    margin: 20px 0;
+    width: 95%;
+  }
+
+  .button-style {
+    width: 80%;
+  }
+}

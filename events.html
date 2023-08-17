@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trainings, Competitions and Events</title>
+
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/slideshow.css" />
+        <link rel="stylesheet" href="styles/events.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Baloo"
+            rel="stylesheet"
+        />
+
+        <link rel="icon" href="/images/logo.svg" />
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </div>
+            <nav class="navbar">
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="events.html" class="active">Events</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li>
+                                        <a href="trainings.html">Trainings</a>
+                                    </li>
+                                    <li>
+                                        <a href="competitions.html"
+                                            >Competitions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="events.html" class="active"
+                                            >Events</a
+                                        >
+                                    </li>
+                                    <li><a href="joinus.html">Join Us</a></li>
+                                    <li>
+                                        <a href="sponsors.html">Sponsors</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-events">
+            <section class="events-section">
+                <h1>Events</h1>
+                <p>
+                    The Delftsche Dodgers organizes social events outside of
+                    training sessions for its members. Past events have included
+                    glow-in-the-dark minigolf, trampoline dodgeball, and
+                    bowling. Additionally, the association also hosts more
+                    low-key hangouts which can also be joined by non-members.
+                    <!-- Check out the documents below to see more information about
+                    any upcoming scheduled events and hangouts!
+                </p>
+                <h3>Upcoming events</h3>
+                <ul>
+                    <li><a href="#">SeptemberEvents.pdf</a></li>
+                </ul> -->
+
+                <!-- Pictures here -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img src="images/events/0.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/1.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/2.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/3.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/4.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/5.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/6.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/7.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/8.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/events/9.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked()">&#10094;</a>
+                            <a class="next" onclick="nextClicked()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="club-days-section">
+                <h1>Club Days</h1>
+                <p>
+                    The Delftsche Dodgers has participated in multiple &#39club
+                    days&#39 in the past which are when members from various
+                    associations around the country meet up, mix up to form
+                    teams of players from differing clubs, and play friendly
+                    matches. Additionally, there is also the option to grab a
+                    drink and bite to eat with everyone afterwards. It is a
+                    great way to gain experience playing cloth matches outside
+                    of official competitions while also getting to know and
+                    bonding with members from other clubs. In the past, clubs
+                    such as Dodgeball Club Amsterdam have hosted multiple club
+                    days a year with a number of members from Delftsche Dodgers
+                    participating (attendance is never mandatory but it is
+                    always encouraged!). Starting this year, we will be hosting
+                    our own club days in Delft as well!
+                </p>
+
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/0.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/1.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/2.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/3.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/4.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/5.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/6.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/7.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/8.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/clubDays/9.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked2()">&#10094;</a>
+                            <a class="next" onclick="nextClicked2()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                        <span class="dot2" onclick="currentSlide2(4)"></span>
+                        <span class="dot2" onclick="currentSlide2(5)"></span>
+                        <span class="dot2" onclick="currentSlide2(6)"></span>
+                        <span class="dot2" onclick="currentSlide2(7)"></span>
+                        <span class="dot2" onclick="currentSlide2(8)"></span>
+                        <span class="dot2" onclick="currentSlide2(9)"></span>
+                        <span class="dot2" onclick="currentSlide2(10)"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>
+                Questions or comments? We can be reached at the following
+                mediums for any inquiries:
+            </h4>
+            <ul>
+                <li><b>Instagram:</b> @delftschedodgers</li>
+                <li><b>Email:</b> delftschedodgers@gmail.com</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="/scripts/slideshow.js"></script>
+        <script type="text/javascript" src="/scripts/slideshow2.js"></script>
+    </body>
+</html>

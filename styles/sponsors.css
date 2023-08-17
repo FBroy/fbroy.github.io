@@ -1,0 +1,45 @@
+/* Sponsors section */
+.sponsors-container {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sponsors-container .sponsor-card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  margin-bottom: 30px;
+  overflow-wrap: break-word;
+}
+
+.sponsors-container .sponsor-card .sponsor-logo {
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.sponsors-container .sponsor-card .sponsor-logo img {
+  height: 100%;
+}
+
+.sponsors-container .sponsor-card h3 {
+  color: #193479;
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+.sponsors-container .sponsor-card ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+/* Become a sponsor section */
+.become-a-sponsor p {
+  margin-bottom: 20px;
+}

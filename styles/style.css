@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 1.125rem;
+    background-color: #E5E5E5;
+}
+
+header .logo img {
+    max-height: 80px;
+}
+
+header .active {
+    font-weight: bold;
+}
+
+/* Style for desktop navbar */
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.desktop-menu li a {
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+    color: black;
+    position: relative;
+}
+
+.desktop-menu li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: black;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.desktop-menu li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Mobile navbar */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.mobile-menu .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.mobile-menu .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.mobile-menu .hamburger>div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(12, 12, 12);
+    transition: transform 0.4s ease;
+}
+
+.mobile-menu .hamburger>div::before,
+.mobile-menu .hamburger>div::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+}
+
+.mobile-menu .hamburger>div::after {
+    top: 10px;
+}
+
+.mobile-menu .toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.mobile-menu .toggler:checked+.hamburger>div::before,
+.mobile-menu .toggler:checked+.hamburger>div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.mobile-menu .toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+.mobile-menu .toggler:checked~.menu {
+    visibility: visible;
+}
+
+.mobile-menu .toggler:checked~.menu>div {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.mobile-menu .toggler:checked~.menu>div>div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.mobile-menu .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    justify-content: center;
+}
+
+.mobile-menu .menu>div {
+    background-color: rgba(39, 39, 38, 0.8);
+    width: 200vw;
+    /* height: 50vh; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    padding: 40px 0;
+}
+
+.mobile-menu .menu>div>div {
+    max-width: 90vw;
+    max-height: 100vh;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.mobile-menu .menu>div>div>ul>li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.mobile-menu .menu>div>div>ul>li>a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.4s ease;
+}
+
+/* Main section */
+main {
+    margin: 30px 5vw;
+    padding: 0;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    color: #193479;
+    margin: 20px 0;
+    font-family: 'Baloo';
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Footer section */
+footer {
+    background-color: #193479;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    flex-grow: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 992px) {
+    /* Header section */
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo img {
+        max-height: 60px;
+    }
+    
+    /* Go from navbar to hamburger menu */
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    /* Main section */
+    main {
+        margin: 10px 10vw;
+    }
+}
