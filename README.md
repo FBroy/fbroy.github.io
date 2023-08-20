@@ -1,10 +1,4 @@
 # Delftsche Dodgers Website
 
-TODO:
-- Add all content
-- Properly style using CSS
-- Add pictures via link somewhere (dynamically loaded)
-- Publish on Github pages
-- Buy domain and redirect to this page
-- ????
-- Profit
+Plans for future releases:
+- Add Dutch version (Excel sheet or something to read from instead of hardcoding?)
