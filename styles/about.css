@@ -48,23 +48,27 @@
 }
 
 .board .president-img {
-  background-image: url(/images/board-president.png);
+  background-image: url(/images/board-president.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .board .vice-president-img {
-  background-image: url(/images/board-vice-president.png);
+  background-image: url(/images/board-vice-president.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .board .treasurer-img {
-  background-image: url(/images/board-treasurer.png);
+  background-image: url(/images/board-treasurer.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .board .secretary-img {
-  background-image: url(/images/board-secretary.png);
+  background-image: url(/images/board-secretary.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .board .board-card h3 {
@@ -73,4 +77,15 @@
 
 .board .board-card p {
   line-height: 26px;
+}
+
+.board .board-img {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.board .board-img img {
+  width: 100%;
 }
