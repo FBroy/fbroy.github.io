@@ -231,8 +231,32 @@
                         </p>
                     </div>
                 </div>
-                <div class="board-img">
+                <!-- <div class="board-img">
                     <img src="images/board-front.jpg" alt="Board image">
+                </div> -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade">
+                            <img src="images/board-front.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="images/board-back.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked2()">&#10094;</a>
+                            <a class="next" onclick="nextClicked2()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                    </div>
                 </div>
             </div>
         </main>
@@ -247,5 +271,6 @@
             </ul>
         </footer>
         <script type="text/javascript" src="/scripts/slideshow.js"></script>
+        <script type="text/javascript" src="/scripts/slideshow2.js"></script>
     </body>
 </html>
