@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About us</title>
+
+        <link rel="icon" href="../images/logo.svg" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/slideshow.css" />
+        <link rel="stylesheet" href="../styles/about.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="logo"><img src="../images/logo.svg" alt="Logo" /></div>
+            <div class="language-selection"><b>English</b> / <a href="/nl/about.html">Nederlands</a></div>
+            <nav class="navbar">
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="/en/home.html">Home</a></li>
+                        <li><a href="/en/about.html" class="active">About</a></li>
+                        <li><a href="/en/trainings.html">Trainings</a></li>
+                        <li><a href="/en/competitions.html">Competitions</a></li>
+                        <li><a href="/en/events.html">Events</a></li>
+                        <li><a href="/en/joinus.html">Join Us</a></li>
+                        <li><a href="/en/sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="/en/home.html">Home</a></li>
+                                    <li><a href="/en/about.html" class="active">About</a></li>
+                                    <li><a href="/en/trainings.html">Trainings</a></li>
+                                    <li><a href="/en/competitions.html">Competitions</a></li>
+                                    <li><a href="/en/events.html">Events</a></li>
+                                    <li><a href="/en/joinus.html">Join Us</a></li>
+                                    <li><a href="/en/sponsors.html">Sponsors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <img src="../images/team.jpg" alt="Dodgeball" />
+        </div>
+
+        <main class="main-about">
+            <div class="delftscheDodgers">
+                <h1>About the Delftsche Dodgers:</h1>
+                <h2>What is Dodgeball?</h2>
+                <p>
+                    Dodgeball is a sport originally created in Africa more than
+                    200 years ago. While many have experienced basic variations
+                    in primary or secondary school, they are frequently unaware
+                    it is actually a full-fledged sport with an official set of
+                    rules run by a worldwide organization called the World
+                    Dodgeball Federation. In its official form, it has two
+                    primary variations: foam dodgeball and cloth dodgeball.
+                    Although slight rule variations exist between the two, both
+                    versions share the same core principles. Two teams face off
+                    on a court approximately the size of a volleyball court. The
+                    goal is to knock the opposing team out by throwing balls
+                    that hit their players or catching the opponents' thrown
+                    balls. The first team to knock the other out wins!
+                </p>
+
+                <h2>Who are the Delftsche Dodgers?</h2>
+                <p>
+                    The Delftsche Dodgers traces its roots back to Fall 2019
+                    when current President Frank Broy started a group of
+                    dodgeball enthusiasts who played casual matches amongst
+                    themselves. This grew in popularity and with help from the
+                    sports center at TU Delft called "X", an official ticket
+                    hour was created in Fall 2021 where every week, students
+                    could sign up to play dodgeball with Frank as the host.
+                    Eventually, a group of regular attendees decided they wanted
+                    to take it even further and in Spring 2023, the Delftsche
+                    Dodgers was officially founded with the goals of seriously
+                    training skills and techniques, participating in the Dutch
+                    national league, and helping to popularize the sport and
+                    allow more people to partake and enjoy it as much as they
+                    do.
+                </p>
+            </div>
+
+            <!-- Pictures here -->
+            <div class="slideshow">
+                <div class="slideshow-container">
+                    <!-- Images -->
+                    <div class="mySlides fade">
+                        <img src="../images/about/0.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/1.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/2.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/3.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/4.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/5.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/6.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/7.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/8.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/about/9.jpg" />
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <div>
+                        <a class="prev" onclick="prevClicked()">&#10094;</a>
+                        <a class="next" onclick="nextClicked()">&#10095;</a>
+                    </div>
+                </div>
+
+                <!-- The dots/circles -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+            </div>
+
+            <div class="board">
+                <h1>Meet the current board:</h1>
+                <div class="board-cards-container">
+                    <div class="board-card">
+                        <div class="profile-picture president-img"></div>
+                        <h3>Frank Broy (President)</h3>
+                        <p>
+                            Frank is currently completing a Cybersecurity
+                            master's program at TU Delft. He is primarily
+                            responsible for external affairs and relations in
+                            addition to coaching most of the training sessions.
+                            Originally from Luxembourg, he enjoys bouldering,
+                            video games, and attending rock and metal concerts.
+                        </p>
+                    </div>
+                    <div class="board-card">
+                        <div class="profile-picture vice-president-img"></div>
+                        <h3>Dylan Bravo (Vice President)</h3>
+                        <p>
+                            Dylan is completing a Master's in Transportation,
+                            Infrastructure, and Logistics at TU Delft. He is
+                            primarily responsible for internal club affairs and
+                            happenings whilst also filling in as a coach for the
+                            training sessions when needed. A citizen of the
+                            Netherlands, Canada, and the United States, Dylan
+                            enjoys playing board games, running 10Ks, and
+                            traveling the world.
+                        </p>
+                    </div>
+                    <div class="board-card">
+                        <div class="profile-picture treasurer-img"></div>
+                        <h3>Niklas Perujo (Treasurer)</h3>
+                        <p>
+                            Niklas is completing an Aerospace Engineering
+                            master's at TU Delft. He is primarily responsible
+                            for all financial affairs for the association.
+                            German and American, he enjoys listening to music,
+                            attending festivals, and spending time with family.
+                        </p>
+                    </div>
+                    <div class="board-card">
+                        <div class="profile-picture secretary-img"></div>
+                        <h3>Susanne Epema (Secretary)</h3>
+                        <p>
+                            Susanne is completing a Geomatics master's at TU
+                            Delft. She is primarily responsible for
+                            documentation and organization of the association's
+                            records and files. Fully Dutch, she enjoys playing
+                            football, painting, and reading in her spare time.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Board images here -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Images -->
+                        <div class="mySlides2 fade">
+                            <img src="../images/board-front.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/board-back.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked2()">&#10094;</a>
+                            <a class="next" onclick="nextClicked2()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h4>
+                Questions or comments? We can be reached at the following mediums for any inquiries:
+            </h4>
+            <ul>
+                <li><b>Instagram:</b> @delftschedodgers</li>
+                <li><b>Email:</b> delftschedodgers@gmail.com</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../scripts/slideshow.js"></script>
+        <script type="text/javascript" src="../scripts/slideshow2.js"></script>
+    </body>
+</html>

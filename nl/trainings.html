@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trainingen</title>
+
+        <link rel="icon" href="../images/logo.svg" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/slideshow.css" />
+        <link rel="stylesheet" href="../styles/trainings.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="logo"><img src="../images/logo.svg" alt="Logo"/></div>
+            <div class="language-selection"><a href="/en/trainings.html">English</a> / <b>Nederlands</b></div>
+            <nav class="navbar">
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="/nl/home.html">Home</a></li>
+                        <li><a href="/nl/about.html">Over</a></li>
+                        <li><a href="/nl/trainings.html" class="active">Trainingen</a></li>
+                        <li><a href="/nl/competitions.html">Wedstrijden</a></li>
+                        <li><a href="/nl/events.html">Evenementen</a></li>
+                        <li><a href="/nl/joinus.html">Word lid</a></li>
+                        <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="/nl/home.html">Home</a></li>
+                                    <li><a href="/nl/about.html">Over</a></li>
+                                    <li><a href="/nl/trainings.html" class="active">Trainingen</a></li>
+                                    <li><a href="/nl/competitions.html">Wedstrijden</a></li>
+                                    <li><a href="/nl/events.html">Evenementen</a></li>
+                                    <li><a href="/nl/joinus.html">Word lid</a></li>
+                                    <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-trainings">
+            <section class="training-section">
+                <h1>Training Schedule</h1>
+                <div class="scroll-div">
+                    <table class="training-schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Location</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>18:00 - 20:00</td>
+                                <td><b>Gymzaal Slauerhofflaan</b><br>Slauerhofflaan 279, 2624 JZ Delft</td>
+                                <td>Primary training</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>18:00 - 19:00</td>
+                                <td>X3, TU Delft</td>
+                                <td>Foam ticket hour</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="note">
+                    Note: these are for the time period from November to
+                    February and are potentially subject to change depending on
+                    hall availability after February.
+                </p>
+
+                <h2>Primary Trainings</h2>
+                <p>
+                    Our training sessions focus on both improving one's
+                    individual dodgeball skills, techniques, and abilities in
+                    addition to fostering team coordination, strategies, and
+                    playmaking. These sessions typically consist of a starting
+                    warm-up exercise followed by drills and exercises before
+                    ending with practice matches and a final fun game. The
+                    warm-up usually consists of a fun, energetic minigame to get
+                    the muscles moving and blood pumping, the drills consist of
+                    structured exercises focusing on one core aspect of
+                    dodgeball such as throwing, catching, etc., and the matches
+                    at the end allow players to practice what they have learned
+                    in a game setting. Both foam and cloth dodgeballs are
+                    utilized in trainings, so participants can choose their preference for every session, even though the
+                    competition itself is only played in cloth.
+                </p>
+
+                <!-- Picture of trainings here -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Images -->
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/0.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/1.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/2.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/3.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/4.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/5.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/6.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/7.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/8.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/trainings/9.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked()">&#10094;</a>
+                            <a class="next" onclick="nextClicked()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                    </div>
+                </div>
+
+                <h2>Foam Ticket Hours</h2>
+                <p>
+                    In addition to the association's trainings, X TU Delft also
+                    hosts foam dodgeball “ticket hours” every Wednesday from
+                    18:00-19:00 in which participants solely play foam dodgeball
+                    matches. All participants for this must have an
+                    X-subscription to join. Many Delftsche Dodgers members can
+                    be seen participating in these fun weekly sessions.
+                    Interested? Sign up via the X TU Delft website which can be
+                    found here:
+                    <a href="https://www.tudelft.nl/en/x/whats-on-offer/overview-a-z/dodgeball"
+                        target="_blank">https://www.tudelft.nl/en/x/whats-on-offer/overview-a-z/dodgeball</a>
+                </p>
+
+                <!-- Pictures of ticket hour here -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Images -->
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/0.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/1.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/2.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/3.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/4.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/5.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/6.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/7.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/8.jpg" />
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="../images/ticketHour/9.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked2()">&#10094;</a>
+                            <a class="next" onclick="nextClicked2()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                        <span class="dot2" onclick="currentSlide2(4)"></span>
+                        <span class="dot2" onclick="currentSlide2(5)"></span>
+                        <span class="dot2" onclick="currentSlide2(6)"></span>
+                        <span class="dot2" onclick="currentSlide2(7)"></span>
+                        <span class="dot2" onclick="currentSlide2(8)"></span>
+                        <span class="dot2" onclick="currentSlide2(9)"></span>
+                        <span class="dot2" onclick="currentSlide2(10)"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>
+                Questions or comments? We can be reached at the following
+                mediums for any inquiries:
+            </h4>
+            <ul>
+                <li><b>Instagram:</b> @delftschedodgers</li>
+                <li><b>Email:</b> delftschedodgers@gmail.com</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../scripts/slideshow.js"></script>
+        <script type="text/javascript" src="../scripts/slideshow2.js"></script>
+    </body>
+
+</html>

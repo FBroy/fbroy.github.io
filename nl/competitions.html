@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wedstrijden</title>
+
+        <link rel="icon" href="../images/logo.svg" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/slideshow.css" />
+        <link rel="stylesheet" href="../styles/competitions.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="logo"><img src="../images/logo.svg" alt="Logo" /></div>
+            <div class="language-selection"><a href="/en/competitions.html">English</a> / <b>Nederlands</b></div>
+            <nav class="navbar">
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="/nl/home.html">Home</a></li>
+                        <li><a href="/nl/about.html">Over</a></li>
+                        <li><a href="/nl/trainings.html">Trainingen</a></li>
+                        <li><a href="/nl/competitions.html" class="active">Wedstrijden</a></li>
+                        <li><a href="/nl/events.html">Evenementen</a></li>
+                        <li><a href="/nl/joinus.html">Word lid</a></li>
+                        <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="/nl/home.html">Home</a></li>
+                                    <li><a href="/nl/about.html">Over</a></li>
+                                    <li><a href="/nl/trainings.html">Trainingen</a></li>
+                                    <li><a href="/nl/competitions.html" class="active">Wedstrijden</a></li>
+                                    <li><a href="/nl/events.html">Evenementen</a></li>
+                                    <li><a href="/nl/joinus.html">Word lid</a></li>
+                                    <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-competitions">
+            <section class="competitions-section">
+                <h1>Competitions</h1>
+                <p>
+                    The Delftsche Dodgers will be participating in its first
+                    ever competition season in the 2023-24 year run by Dodgeball
+                    Bond Nederland (DBN). Instead of weekly matchups between
+                    clubs, there will be four competition days spread out
+                    throughout the season (roughly once every 1-2 months) in
+                    which all teams converge at one club and play each other.
+                    Participation in competitions as part of the Delftsche
+                    Dodgers requires a full year or half year competition
+                    membership. Not interested in competitions? You can also
+                    sign up as a basic member as well! Learn more about the Dutch national dodgeball league at DBN&#39s website: <a target="_blank" href="https://dodgeballbondnederland.nl/">https://dodgeballbondnederland.nl/</a>
+                </p>
+
+                <!-- Pictures from competition days here -->
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <!-- Images -->
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/0.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/1.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/2.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/3.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/4.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/5.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/6.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/7.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/8.jpg" />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/competitions/9.jpg" />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <div>
+                            <a class="prev" onclick="prevClicked()">&#10094;</a>
+                            <a class="next" onclick="nextClicked()">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>
+                Questions or comments? We can be reached at the following
+                mediums for any inquiries:
+            </h4>
+            <ul>
+                <li><b>Instagram:</b> @delftschedodgers</li>
+                <li><b>Email:</b> delftschedodgers@gmail.com</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../scripts/slideshow.js"></script>
+    </body>
+</html>

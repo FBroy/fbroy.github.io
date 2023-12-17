@@ -31,6 +31,18 @@ header .active {
     font-weight: bold;
 }
 
+/* Style for language selection */
+.language-selection a:hover{
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+.language-selection a {
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.2s ease;
+}
+
 /* Style for desktop navbar */
 .desktop-menu ul {
     list-style: none;

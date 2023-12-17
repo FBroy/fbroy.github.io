@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Delftsche Dodgers</title>
+
+        <link rel="icon" href="../images/logo.svg" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/slideshow.css" />
+        <link rel="stylesheet" href="../styles/index.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="logo"><img src="../images/logo.svg" alt="Logo"/></div>
+            <div class="language-selection"><a href="/en/home.html">English</a> / <b>Nederlands</b></div>
+            <nav class="navbar">
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="/nl/home.html" class="active">Home</a></li>
+                        <li><a href="/nl/about.html">Over</a></li>
+                        <li><a href="/nl/trainings.html">Trainingen</a></li>
+                        <li><a href="/nl/competitions.html">Wedstrijden</a></li>
+                        <li><a href="/nl/events.html">Evenementen</a></li>
+                        <li><a href="/nl/joinus.html">Word lid</a></li>
+                        <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="/nl/home.html" class="active">Home</a></li>
+                                    <li><a href="/nl/about.html">Over</a></li>
+                                    <li><a href="/nl/trainings.html">Trainingen</a></li>
+                                    <li><a href="/nl/competitions.html">Wedstrijden</a></li>
+                                    <li><a href="/nl/events.html">Evenementen</a></li>
+                                    <li><a href="/nl/joinus.html">Word lid</a></li>
+                                    <li><a href="/nl/sponsors.html">Sponsoren</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <img src="../images/dodgeball.png" alt="Dodgeball" />
+        </div>
+
+        <main class="main-index">
+            <section class="intro">
+                <h1>Delftsche Dodgers</h1>
+
+                <p>
+                    Welcome to the Delftsche Dodgers! We are an official
+                    dodgeball association located in Delft, the Netherlands.
+                    Explore the world of dodgeball with us!
+                </p>
+            </section>
+
+            <section class="cards-section">
+                <div class="card">
+                    <img
+                        src="../images/clock-icon.svg"
+                        alt="Clock icon"
+                        class="main-icon clock-icon"
+                    />
+                    <h2>Training schedule</h2>
+                    <p>We hold trainings in foam and cloth dodgeball</p>
+                    <a href="/nl/trainings.html" class="button-style">Learn More</a>
+                </div>
+                <div class="card">
+                    <img
+                        src="../images/competition-icon.svg"
+                        alt="Competition icon"
+                        class="main-icon competition-icon"
+                    />
+                    <h2>Competitions</h2>
+                    <p>We participate in the Dutch national dodgeball league</p>
+                    <a href="/nl/competitions.html" class="button-style"
+                        >Learn More</a
+                    >
+                </div>
+                <div class="card">
+                    <img
+                        src="../images/calendar-icon.svg"
+                        alt="Calendar icon"
+                        class="main-icon calendar-icon"
+                    />
+                    <h2>Events</h2>
+                    <p>We organise social activities for our members</p>
+                    <a href="/nl/events.html" class="button-style">Learn More</a>
+                </div>
+            </section>
+
+            <section class="join-us-section">
+                <h2>Want to become a member?</h2>
+                <a href="/nl/joinus.html" class="button-style">Join us</a>
+            </section>
+
+            <!-- General pictures here -->
+            <div class="slideshow">
+                <div class="slideshow-container">
+                    <!-- Images -->
+                    <div class="mySlides fade">
+                        <img src="../images/home/0.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/1.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/2.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/3.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/4.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/5.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/6.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/7.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/8.jpg" />
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/home/9.jpg" />
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <div>
+                        <a class="prev" onclick="prevClicked()">&#10094;</a>
+                        <a class="next" onclick="nextClicked()">&#10095;</a>
+                    </div>
+                </div>
+
+                <!-- The dots/circles -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h4>
+                Questions or comments? We can be reached at the following
+                mediums for any inquiries:
+            </h4>
+            <ul>
+                <li><b>Instagram:</b> @delftschedodgers</li>
+                <li><b>Email:</b> delftschedodgers@gmail.com</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../scripts/slideshow.js"></script>
+    </body>
+</html>
